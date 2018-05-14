@@ -21,7 +21,7 @@ public class UserService {
 
     @Transactional(rollbackFor = Exception.class)
     public User save(User user) {
-//        return
+//        return userRepository.saveAndFlush(user);
         userRepository.saveAndFlush(user);
         throw new RuntimeException("test transaction");
     }

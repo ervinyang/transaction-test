@@ -1,6 +1,8 @@
 # Spring事务注解备忘录
 
-> https://www.ibm.com/developerworks/cn/java/j-master-spring-transactional-use/index.html
+> 参考文献：
+> 
+> [透彻的掌握 Spring 中@transactional 的使用](https://www.ibm.com/developerworks/cn/java/j-master-spring-transactional-use/index.html)
 
 ## 注解只能打在public方法上
 ```
