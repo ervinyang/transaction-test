@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:tests;DB_CLOSE_DELAY=-1 # 内存数据库-数据库只在内存中运行，关闭连接后数据库将被清空，适合测试环境
+#    url: jdbc:h2:./database/samspledb;AUTO_SERVER=TRUE # 内存数据库——嵌入式，数据库持久化存储为单个文件
+    driver-class-name: org.h2.Driver
+#    schema: classpath:schema.sql # 指定生成数据库的schema文件位置
+#    data: classpath:data.sql
+  jpa:
+    show-sql: true
+    hibernate.ddl-auto: create-drop
